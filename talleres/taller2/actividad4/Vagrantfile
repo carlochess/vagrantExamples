@@ -1,0 +1,14 @@
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+	config.vm.define :m1 do |node_1|
+		node_1.vm.box = "precise32"
+		node_1.vm.provider :virtualbox do |vb|
+			vb.customize ["modifyvm", :id, "--memory", "128","--cpus", "1", "--name", "test-machine" ]
+		end
+		node_1.vm.provision :chef_solo do |chef|
+			chef.cookbooks_path = "cookbooks"
+			chef.add_recipe "test::installnmap"
+		end
+	end
+end
+

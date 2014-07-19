@@ -8,7 +8,7 @@ A collections of vagrant examples using chef
 
 Una herramienta que usa Virtualvbox para construir máquinas virtuales portables, configurables, ligeras y fáciles de manejar. El mayor objetivo es asegurar consistencia y uniformidad entre los entornos de trabajo.
 
-¿En qué podria serme útil Vagrant?
+¿En qué podria ser útil Vagrant?
 ===============
 Imagina que tienes un equipo de desarrolladores web que usan LAMP (linux, Apacje, Mysql y Php). Su ambiente de trabajo difiere de su ambiente de producción, así que Vagrant puede reproducir este último para que el trabajo sea más cómodo.
 
